@@ -1,0 +1,494 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link type="text/css" rel="stylesheet" href="styles.css">
+  <nav id="navbar">
+    <header><h1>Pascal Documentation</h1></header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Pascal_Program_Structure">Pascal Program Structure</a>
+      <a class="nav-link" href="#Hello_World">Hello World</a>
+      <a class="nav-link" href="#Variable">Variable</a>
+      <a class="nav-link" href="#Subprograms">Subprograms</a>
+      <a class="nav-link" href="#Type_Declarations">Type Declarations</a>
+      <a class="nav-link" href="#Constants">Constants</a>
+      <a class="nav-link" href="#Relational_Operators">Relational Operators</a>
+      <a class="nav-link" href="#Boolean_Operators">Boolean Operators</a>
+      <a class="nav-link" href="#Function_Declarations">Function Declarations</a>
+      <a class="nav-link" href="#Procedure_Declarations">Procedure Declarations</a>
+      <a class="nav-link" href="#Reference">Reference</a>
+    </nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header><h2>Introduction<h2></header>   
+    <p>Pascal is a general-purpose, high-level language that was originally developed by Niklaus Wirth in the early 1970s. It was developed for teaching programming as a systematic discipline and to develop reliable and efficient programs.</p>
+    <p>Pascal is Algol-based language and includes many constructs of Algol. Algol 60 is a subset of Pascal. Pascal offers several data types and programming structures. It is easy to understand and maintain the Pascal programs.</p>
+    <p>Pascal has grown in popularity in the teaching and academics arena for various reasons:</p>
+    <ul>
+      <li>Easy to learn.</li>
+      <li>Structured language.</li>
+      <li>It produces transparent, efficient and reliable programs.</li>
+      <li>It can be compiled on a variety of computer platforms.</li>
+    </ul>  
+  </section>  
+  <section class="main-section" id="Pascal_Program_Structure">
+    <header>Pascal Program Structure</header>
+    <p>A Pascal program basically consists of the following parts:</p>
+    <ul>
+      <li>Program nameProgram name.</li>
+      <li>Uses command</li>
+      <li>Type declarations</li>
+      <li>Constant declarations</li>
+      <li>Variables declarations</li>
+      <li>Functions declarations</li>
+      <li>Procedures declarations</li>
+      <li>Main program block</li>
+      <li>Statements and Expressions within each block</li>
+      <li>Comments</li>   
+    </ul>
+    <p>Every pascal program generally has a heading statement, a declaration and an execution part strictly in that order. Following format shows the basic syntax for a Pascal program:</p>
+    <pre>
+      <code>
+program {name of the program}
+uses {comma delimited names of libraries you use}
+const {global constant declaration block}
+var {global variable declaration block}
+
+function {function declarations, if any}
+{ local variables }
+begin
+...
+end;
+
+procedure { procedure declarations, if any}
+{ local variables }
+begin
+...
+end;
+
+begin { main program block starts}
+...
+end. { the end of main program block }
+      </code>
+    </pre>
+  </section>  
+  <section class="main-section" id="Hello_World">
+    <header>Hello World</header>
+    <p>Following is a simple pascal code that would print the words "Hello, World!"</p>
+    <pre>
+      <code>
+program HelloWorld;
+uses crt;
+
+(* Here the main program block starts *)
+begin
+   writeln('Hello, World!');
+   readkey;
+end. 
+      </code>
+    </pre>
+    <p>This will produce following result: Hello, World!</p>
+    <p>Let us look various parts of the above program:</p>
+    <ul>
+      <li>The first line of the program program HelloWorld; indicates the name of the program.</li>
+      <li>The second line of the program uses crt; is a preprocessor command, which tells the compiler to include the crt unit before going to actual compilation.</li>
+      <li>The next lines enclosed within begin and end statements are the main program block. Every block in Pascal is enclosed within a begin statement and an end statement. However, the end statement indicating the end of the main program is followed by a full stop (.) instead of semicolon (;).</li>
+      <li>The begin statement of the main program block is where the program execution begins.</li>
+      <li>The lines within (*...*) will be ignored by the compiler and it has been put to add a comment in the program.</li>
+      <li>The statement writeln('Hello, World!'); uses the writeln function available in Pascal which causes the message "Hello, World!" to be displayed on the screen.</li>
+      <li>The statement readkey; allows the display to pause until the user presses a key. It is part of the crt unit. A unit is like a library in Pascal.</li>
+      <li>The last statement end. ends your program.</li>
+    </ul>
+  </section> 
+  <section class="main-section" id="Variable">
+    <header>Variable</header>
+    <p>A variable definition is put in a block beginning with a var keyword, followed by definitions of the variables as follows:</p>
+    <pre>
+      <code>
+var
+A_Variable, B_Variable ... : Variable_Type;
+      </code>
+    </pre>
+    <p>Pascal variables are declared outside the code-body of the function which means they are not declared within the begin and end pairs, but they are declared after the definition of the procedure/function and before the begin keyword. For global variables, they are defined after the program header.</p>
+    <p>All variables must be declared before we use them in Pascal program. All variable declarations are followed by the var keyword. A declaration specifies a list of variables, followed by a colon (:) and the type. Syntax of variable declaration is:</p>
+    <pre>
+      <code>
+var
+variable_list : type;
+      </code>
+    </pre>
+    <p>Here, type must be a valid Pascal data type including character, integer, real, boolean, or any user-defined data type, etc., and variable_list may consist of one or more identifier names separated by commas. Some valid variable declarations are shown here:</p>
+    <pre>
+      <code>
+var
+age, weekdays : integer;
+taxrate, net_income: real;
+choice, isready: boolean;
+initials, grade: char;
+name, surname : string;
+      </code>
+    </pre>
+    <p>In the previous tutorial, we have discussed that Pascal allows declaring a type. A type can be identified by a name or identifier. This type can be used to define variables of that type. For example:</p>
+    <pre>
+      <code>
+type
+days, age = integer;
+yes, true = boolean;
+name, city = string;
+fees, expenses = real;
+      </code>
+    </pre>
+    <p>Now, the types so defined can be used in variable declarations:</p>
+    <pre>
+      <code>
+var
+weekdays, holidays : days;
+choice: yes;
+student_name, emp_name : name;
+capital: city;
+cost: expenses;
+      </code>
+    </pre>
+    <p>Please note the difference between type declaration and var declaration. Type declaration indicates the category or class of the types such as integer, real, etc., whereas the variable specification indicates the type of values a variable may take. You can compare type declaration in Pascal with typedef in C. Most importantly, the variable name refers to the memory location where the value of the variable is going to be stored. This is not so with the type declaration.</p>
+  </section>  
+  <section class="main-section" id="Subprograms">
+    <header>Subprograms</header>
+    <p>A subprogram is a program unit/module that performs a particular task. These subprograms are combined to form larger programs. This is basically called the 'Modular design.' A subprogram can be invoked by a subprogram/program, which is called the calling program. Pascal provides two kinds of subprograms:</p>
+    <ul>
+      <li>Functions − these subprograms return a single value.</li>
+      <li>Procedures − these subprograms do not return a value directly.</li>
+    </ul>
+  </section>  
+  <section class="main-section" id="Type_Declarations">
+    <header>Type Declarations</header>
+    <p>The type declaration is used to declare the data type of an identifier. Syntax of type declaration is:</p>
+    <pre>
+      <code>
+ type-identifier-1, type-identfier-2 = type-specifier;        
+      </code>
+    </pre>
+    <p>For example, the following declaration defines the variables days and age as integer type, yes and true as Boolean type, name and city as string type, fees and expenses as real type.</p>
+    <pre>
+      <code>
+type
+days, age = integer;
+yes, true = boolean;
+name, city = string;
+fees, expenses = real;     
+      </code>
+    </pre>
+    <p>Variables are assigned a value with a colon and the equal sign, followed by a constant expression. The general form of assigning a value is:</p>
+    <pre>
+      <code>
+variable_name := value;   
+      </code>
+    </pre>
+    <p>By default, variables in Pascal are not initialized with zero. They may contain rubbish values. So it is a better practice to initialize variables in a program. Variables can be initialized (assigned an initial value) in their declaration. The initialization is followed by the var keyword and the syntax of initialization is as follows</p>
+    <pre>
+      <code>
+var
+variable_name : type = value;
+      </code>
+    </pre>
+    <p>Some examples are:</p>
+    <pre>
+      <code>
+age: integer = 15;
+taxrate: real = 0.5;
+grade: char = 'A';
+name: string = 'John Smith';
+      </code>
+    </pre>
+    <p>Let us look at an example, which makes use of various types of variables discussed so far:</p>
+    <pre>
+      <code>
+program Greetings;
+const
+message = ' Welcome to the world of Pascal ';
+
+type
+name = string;
+var
+firstname, surname: name;
+
+begin
+   writeln('Please enter your first name: ');
+   readln(firstname);
+   
+   writeln('Please enter your surname: ');
+   readln(surname);
+   
+   writeln;
+   writeln(message, ' ', firstname, ' ', surname);
+end.
+      </code>
+    </pre>
+    <p>When the above code is compiled and executed, it produces the following result:</p>
+    <pre>
+      <code>
+Please enter your first name:
+John
+Please enter your surname:
+Smith
+Welcome to the world of Pascal John Smith
+      </code>
+    </pre>
+  </section>
+  <section class="main-section" id="Constants">
+    <header>Constants</header>
+    <p>Use of constants makes a program more readable and helps to keep special quantities at one place in the beginning of the program. Pascal allows numerical, logical, string and character constants. Constants can be declared in the declaration part of the program by specifying the const declaration. All constant declarations must be given before the variable declaration. Syntax of constant type declaration is follows:</p>
+    <pre>
+      <code>
+const
+Identifier = contant_value;   
+      </code>
+    </pre>
+    <p>Following are some examples of constant declarations:</p>
+    <pre>
+      <code>
+VELOCITY_LIGHT = 3.0E=10;
+PIE = 3.141592;
+NAME = 'Stuart Little';
+CHOICE = yes;
+OPERATOR = '+'; 
+      </code>
+    </pre>
+    <p>Syntax for declaring constants is as follows:</p>
+    <pre>
+      <code>
+const
+identifier = constant_value;
+      </code>
+    </pre>
+    <p>The following example illustrates the concept:</p>
+    <pre>
+      <code>
+program const_circle (input,output);
+const
+PI = 3.141592654;
+
+var
+r, d, c : real;   {variable declaration: radius, dia, circumference}
+
+begin
+   writeln('Enter the radius of the circle');
+   readln(r);
+   
+   d := 2 * r;
+   c :=  PI * d;
+   writeln('The circumference of the circle is ',c:7:2);
+end.
+      </code>
+    </pre>
+    <p>When the above code is compiled and executed, it produces the following result:</p>
+    <pre>
+       Enter the radius of the circle
+       23
+       The circumference of the circle is 144.51      
+    </pre>
+  </section>
+  <section class="main-section" id="Relational_Operators">
+    <header>Relational Operators</header>
+    <p>Following table shows all the relational operators supported by Pascal. Assume variable A holds 10 and variable B holds 20, then:</p>
+    <!--tabla operadores relacionales-->
+    <img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/5016503176/original/Relation.jpg?1431114135">
+  </section>
+  <section class="main-section" id="Boolean_Operators">
+    <header>Boolean Operators</header>
+    <p>Following table shows all the Boolean operators supported by Pascal language. All these operators work on Boolean operands and produce Boolean results. Assume variable A holds true and variable B holds false, then:</p>
+    <img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/5016503266/original/Boolean.jpg?1431114186">    
+  </section>
+  <section class="main-section" id="Function_Declarations">
+    <header>Function Declarations</header>
+    <p>A function is a group of statements that together perform a task. Every Pascal program has at least one function, which is the program itself, and all the most trivial programs can define additional functions.</p>
+    <p>A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.</p>
+    <p>Pascal standard library provides numerous built-in functions that your program can call. For example, function AppendStr() appends two strings, function New() dynamically allocates memory to variables and many more functions.</p>
+    <p>In Pascal, a function is defined using the function keyword. The general form of a function definition is as follows:</p>
+    <pre>
+      <code>
+function name(argument(s): type1; argument(s): type2; ...): function_type;
+local declarations;
+
+begin
+   ...
+   (*statements*)
+   ...
+   name:= expression;
+end;
+      </code>        
+    </pre>
+    <p>A function definition in Pascal consists of a function header, local declarations and a function body. The function header consists of the keyword function and a name given to the function. Here are all the parts of a function:</p>
+    <ul>
+      <li>Arguments − The argument(s) establish the linkage between the calling program and the function identifiers and also called the formal parameters. A parameter is like a placeholder. When a function is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of parameters of a function. Use of such formal parameters is optional. These parameters may have standard data type, user-defined data type or subrange data type.
+
+The formal parameters list appearing in the function statement could be simple or subscripted variables, arrays or structured variables, or subprograms.</li>
+      <li>Return Type − All functions must return a value, so all functions must be assigned a type. The function-type is the data type of the value the function returns. It may be standard, user-defined scalar or subrange type but it cannot be structured type.</li>
+      <li>Local declarations − Local declarations refer to the declarations for labels, constants, variables, functions and procedures, which are application to the body of function only.</li>
+      <li>Function Body − The function body contains a collection of statements that define what the function does. It should always be enclosed between the reserved words begin and end. It is the part of a function where all computations are done. There must be an assignment statement of the type - name := expression; in the function body that assigns a value to the function name. This value is returned as and when the function is executed. The last statement in the body must be an end statement.</li>
+    </ul>
+    <p>Following is an example showing how to define a function in pascal:</p>
+    <pre>
+      <code>
+(* function returning the max between two numbers *)
+function max(num1, num2: integer): integer;
+
+var
+   (* local variable declaration *)
+   result: integer;
+
+begin
+   if (num1 > num2) then
+      result := num1
+   
+   else
+      result := num2;
+   max := result;
+end;
+      </code>
+    </pre>
+    <p>A function declaration tells the compiler about a function name and how to call the function. The actual body of the function can be defined separately. A function declaration has the following parts:</p>
+    <pre>
+      <code>
+ function name(argument(s): type1; argument(s): type2; ...): function_type;
+      </code>
+    </pre>
+    <p>For the above-defined function max(), following is the function declaration:</p>
+    <pre>
+      <code>
+ function max(num1, num2: integer): integer;
+      </code>
+    </pre>
+    <p>Function declaration is required when you define a function in one source file and you call that function in another file. In such case, you should declare the function at the top of the file calling the function.</p>
+    <p>While creating a function, you give a definition of what the function has to do. To use a function, you will have to call that function to perform the defined task. When a program calls a function, program control is transferred to the called function. A called function performs defined task, and when its return statement is executed or when it last end statement is reached, it returns program control back to the main program.</p>
+    <p>To call a function, you simply need to pass the required parameters along with function name, and if function returns a value, then you can store returned value. Following is a simple example to show the usage:</p>
+    <pre>
+      <code>
+program exFunction;
+var
+   a, b, ret : integer;
+
+(*function definition *)
+function max(num1, num2: integer): integer;
+var
+   (* local variable declaration *)
+   result: integer;
+
+begin
+   if (num1 > num2) then
+      result := num1
+   
+   else
+      result := num2;
+   max := result;
+end;
+
+begin
+   a := 100;
+   b := 200;
+   (* calling a function to get max value *)
+   ret := max(a, b);
+   
+   writeln( 'Max value is : ', ret );
+end.
+      </code>
+    </pre>
+    <p>When the above code is compiled and executed, it produces the following result: Max value is : 200 </p>
+  </section>
+  <section class="main-section" id="Procedure_Declarations">
+    <header>Procedure Declarations</header>
+    <p>Procedures are subprograms that, instead of returning a single value, allow to obtain a group of results. In Pascal, a procedure is defined using the procedure keyword. The general form of a procedure definition is as follows:</p>
+    <pre>
+      <code>
+procedure name(argument(s): type1, argument(s): type 2, ... );
+   (*local declarations*)
+begin
+   (*procedure body*)
+end;
+      </code>
+    </pre>
+    <p>A procedure definition in Pascal consists of a header, local declarations and a body of the procedure. The procedure header consists of the keyword procedure and a name given to the procedure. Here are all the parts of a procedure:</p>
+    <ul>
+      <li>Arguments − The argument(s) establish the linkage between the calling program and the procedure identifiers and also called the formal parameters. Rules for arguments in procedures are same as that for the functions.</li>
+      <li>Local declarations − Local declarations refer to the declarations for labels, constants, variables, functions and procedures, which are applicable to the body of the procedure only.</li>
+      <li>Procedure Body − The procedure body contains a collection of statements that define what the procedure does. It should always be enclosed between the reserved words begin and end. It is the part of a procedure where all computations are done.</li>
+      <p>Following is the source code for a procedure called findMin(). This procedure takes 4 parameters x, y, z and m and stores the minimum among the first three variables in the variable named m. The variable m is passed by reference (we will discuss passing arguments by reference a little later):</p>     
+    </ul>
+    <pre>
+      <code>
+procedure findMin(x, y, z: integer; var m: integer); 
+(* Finds the minimum of the 3 values *)
+
+begin
+   if x < y then
+      m := x
+   else
+      m := y;
+   
+   if z <m then
+      m := z;
+end; { end of procedure findMin }  procedure findMin(x, y, z: integer; var m: integer); 
+(* Finds the minimum of the 3 values *)
+
+begin
+   if x < y then
+      m := x
+   else
+      m := y;
+   
+   if z <span><</span> m then
+      m := z;
+end; { end of procedure findMin }  
+      </code>
+    </pre>
+    <p>A procedure declaration tells the compiler about a procedure name and how to call the procedure. The actual body of the procedure can be defined separately. A procedure declaration has the following syntax:</p>
+    <pre>
+      <code>
+procedure name(argument(s): type1, argument(s): type 2, ... );
+      </code>
+    </pre>
+    <p>Please note that the name of the procedure is not associated with any type. For the above defined procedure findMin(), following is the declaration:</p>
+    <pre>
+      <code>
+procedure findMin(x, y, z: integer; var m: integer);
+      </code>
+    </pre>
+    <p>While creating a procedure, you give a definition of what the procedure has to do. To use the procedure, you will have to call that procedure to perform the defined task. When a program calls a procedure, program control is transferred to the called procedure. A called procedure performs the defined task, and when its last end statement is reached, it returns the control back to the calling program.</p>
+    <p>To call a procedure, you simply need to pass the required parameters along with the procedure name as shown below</p>
+    <pre>
+      <code>
+program exProcedure;
+var
+   a, b, c,  min: integer;
+procedure findMin(x, y, z: integer; var m: integer); 
+(* Finds the minimum of the 3 values *)
+
+begin
+   if x < y then
+      m:= x
+   else
+      m:= y;
+   
+   if z < m then
+      m:= z;
+end; { end of procedure findMin }  
+
+begin
+   writeln(' Enter three numbers: ');
+   readln( a, b, c);
+   findMin(a, b, c, min); (* Procedure call *)
+   
+   writeln(' Minimum: ', min);
+end.
+      </code>
+    </pre>
+    <pre>
+   When the above code is compiled and executed, it produces the following result: 
+   Enter three numbers:
+   89 45 67
+   Minimum: 45
+    </pre>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <ul>
+      <li>All the documentation in this page is taken from <a href="https://www.tutorialspoint.com/pascal/pascal_quick_guide.htm" target="_blank">Tutorialspoint<a></li>
+    <ul>
+  </section>
+</main>

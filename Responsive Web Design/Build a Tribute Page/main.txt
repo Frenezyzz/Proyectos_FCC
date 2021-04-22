@@ -1,0 +1,53 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carrera musica Ronnie Radke</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+  </head>
+  <body > 
+    <main id="main">
+      <div> 
+        <h1 id="title">Ronald Joseph Radke</h1>
+        <p class="sub">Idol of many people in the world</p>
+      </div>
+      <div id="img-div">        
+          <img  id="image"   src="https://i.ytimg.com/vi/SEbxwmjScr8/sddefault.jpg#404_is_fine">
+          <figcaption id="img-caption">
+            This image was taken in the official video of his song Losing My Life with his daughter.
+          </figcaption>         
+       </div>
+      <h2>Below is Ronnie's music career timeline.</h2>
+      <div id="tribute-info">
+        <ul>
+          <li>1983 - Ronald Joseph Radke was born on December 15, 1983 at Saint Rows Hospital, Las Vegas, Nevada. His mother left him at a very young age, but later in life he was able to meet her. She ended up leaving him again due to her troubles with addiction. He was raised by his father who also had a drug problem but later became a born again Christian, and sober. </li><br>
+          <li>2001 - Like a solist, Ronnie recorded the song Listen Up with a friend, the productor Michael "Elvis" Baskette.</li><br>
+          <li>2004 - Ronnie Radke and Max Green met Bryan Money for created a band, Escape the Fate. He agreed and they started an audition for a drummer, Robert Ortiz, 17 years old was selected, creating Escape the Fate. A few weeks later, Omar Espinosa, Lovehatehero's guitarist join the band as rhythmic guitarist.</li><br>
+          <li>2006 - Along with Epitaph Records, ETF released the Sin Sympathy for the Dead EP in May, recording a few songs from their debut album, Dying Is Your Latest Fashion, released on September 26, both works produced by Radke's producer and friend Michael. "Elvis" Baskette.</li><br>
+          <li>2007 - ETF participated in shows such as the Warped Tour and the "Black On Black" Tour with Blessthefall.</li><br>
+          <li>2008 - Ronnie Radke was officially expelled in mid-2008. What was clarified by the band was that Ronnie was expelled due to having problems with his probation since 2006, hindering his international promotion, since he could not leave the country. </li><br>
+          <li>2009 - In December 2008, Radke formed the band "From Behind These Walls" with Nason Schoeffler, which was renamed Falling in Reverse in August 2009.</li><br>
+          <li>2010 - Because Ronnie was serving a prison sentence. This, when serving his sentence in full on December 12, 2010, entered the studio a week later, recording an album finished in February.</li><br>
+          <li>2011 - Their first single Raised By Wolves was released in June 2011. The album The Drug In Me Is You was released on July 26, 2011, by Epitaph Records. Ronnie Radke announced that songs recorded by him during his stay at Escape the Fate will be performed at his concerts, such as Make Up, As You're Falling Down, Not Good Enough for Truth in Cliché and Situations (these last two have already been performed) because they were composed by him in its entirety.</li><br>
+          <li>2012 - The band has been in constant motion, including the annual Warped Tour. In January 2012, the "The Drug In Me Is You Tour" began in the United States. They are currently made up of guitarists Jacky Vincent (Jacky left Falling in Reverse on October 31, 2015 to start his solo career) and Derek Jones, drummer Ryan Seaman and bassist Ron Ficarro, the latter officially integrated in January 2012.</li><br>
+          <li>2014/present - Radke has currently recorded four solo songs in the Rap genre (Fair weather fans, Blacklist, What's up earth and I wash cars). Radke has already released one of the songs from his new solo album, called "Destiny". This new album, titled "Watch Me", was officially in 2014, which featured the collaborations of Deuce from the band Hollywood Undead, Jacoby Shaddix, vocalist of the band Papa Roach, Andy Biersack, vocalist of the band Black Veil Brides, Craig Mabbitt, vocalist of the band Escape the Fate and Danny Worsnop, vocalist of the band Asking Alexandria, among others.</li><br>
+        </ul>
+
+      </div>
+      <blockquote cite="https://www.letras.com/falling-in-reverse/im-bad-at-life/">
+        <p>
+          Hey girl, let's get out of here            <br>
+          View the world in the rearview mirror      <br>
+          Just me and you with nothing to lose       <br>
+          Electric love and something to prove       <br>
+          So please take care of my hurt heart       <br>
+          'Cause trusting you is the hardest part    <br>
+          You might as well no matter what...          
+        </p>
+        <cite>Composed by: Christian Thompson / Derek Jones / Ronnie Rodke / Ryan Seaman / Zakk Sandler.</cite>
+      </blockquote>
+       <h3>If you want to read more about this singer, enter this <a id="tribute-link" href="https://simple.wikipedia.org/wiki/Ronnie_Radke" target="_blank">wikipedia link</a>            </h3>
+    </main>
+  </body>
+</html>

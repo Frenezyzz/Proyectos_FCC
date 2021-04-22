@@ -1,0 +1,44 @@
+#main{
+  background-color:#C8C8C8;
+  padding:20px 15px 10px 15px;
+  margin:0;
+}
+#title{
+  font-size:50px;
+  text-align:center;
+  background-color:#C8C8C8;
+  padding:0;
+  margin:0;
+}
+#img-div{
+  display:flex;
+  padding:20px;
+  margin:20px;
+  flex-direction:column;
+  background-color:#fff;
+}
+#image{
+  max-width:100%;
+  height:auto;
+  align-self:center;
+  
+}
+#img-caption{
+  text-align:center;
+  line-height:50px;
+}
+#tribute-info{
+  line-height:20px;
+  font-size:18px;
+}
+#tribute-link{
+  text-decoration:none;
+}
+#tribute-link:hover {
+  text-decoration:underline;
+}
+.sub{
+  text-align:center;
+  margin:10px;
+  font-size:20px;
+}

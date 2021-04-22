@@ -1,0 +1,141 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+main{
+  padding:5rem;
+}
+body{
+  line-height:1.6rem;
+  font-family:verdana;
+}
+#header{
+  display:flex;
+  width:100%;
+  align-items:center;
+  justify-content:space-between;
+  padding:1rem 3.2rem;
+  position:fixed;
+}
+nav#nav-bar ul{
+  display:flex;
+}
+nav#nav-bar ul li{
+  margin-left:1.9rem;
+}
+nav#nav-bar ul li a{
+  color:#f55;
+}
+@media screen and (max-width: 650px){
+  header{
+    flex-direction:column;
+  }
+  nav#nav-bar ul{
+    display:block;
+    text-align:center;
+  }
+  #header-img{
+    margin:1erm 0;
+    text-align:center;
+  }
+}
+.container-getstarted{
+  text-align:center;
+  margin:1.5rem auto;
+}
+.container-getstarted input#email{
+  width:250px;
+}
+.container-getstarted input#submit{
+  width:120px;
+  margin-left:1rem;
+  border:none;
+  font-size:1rem;
+  text-transform:uppercase;
+  font-weight:bold;
+  background-color:#ff0;
+}
+.subcontainer-feature{
+  display:flex;
+  align-items:center;
+  margin-top:2rem;
+}
+.feature-text{
+  margin-left:3.5rem;
+}
+.feature-text p{
+  font-size:1rem;
+  opacity:0.8;
+}
+.feature-text h3{
+  font-size:1.5rem;
+}
+@media screen and (max-width:650px){
+  .subcontainer-feature{
+    flex-direction:column;
+  }
+  .feature-text{
+    margin:0;
+    text-align:center;
+  }
+}
+.container-video{
+  text-align:center;
+  margin:3rem 0;
+}
+.container-pricing{
+  width:220px;
+  margin:0 auto;
+}
+.subcontainer-pricing{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:5rem;
+  line-height:40px;
+  border:1px solid;
+  text-align:center;
+}
+.subcontainer-pricing h4{
+  background-color:#ddd;
+}
+.subcontainer-pricing .price{
+  font-weight:bold;
+  font-size:1.5rem;
+}
+.subcontainer-pricing a{
+  background-color:#ff0;
+  display:block;
+  margin:1rem auto;
+  width:200px;
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#111;
+}
+footer{
+  background-color:#ddd;
+  text-align:end;
+  padding:1rem 0.5rem;
+}
+footer ul{
+  display:flex;
+  justify-content:flex-end;
+}
+footer ul li{
+  margin-left:1.5rem;
+}
+footer p{
+  opacity:0.7;
+}
+#header-img{
+  width:200px;
+}
+nav{
+  width:100%;
+}
+ul{ 
+  list-style:none; 
+}
+a{
+  text-decoration:none;
+}

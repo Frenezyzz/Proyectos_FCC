@@ -1,0 +1,235 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:verdana;
+  box-sizing:border-box;
+}
+  
+#navbar{
+  position:fixed;
+  width:22rem;
+  text-align:center;
+}
+.nav-link{
+  display:block;
+  padding:10px 10px;
+  text-decoration:none;
+  border:1px solid #000;
+  color:#000;
+}
+#main-doc{ 
+  padding-left:24rem;
+}
+.main-section header{
+  font-size:1.1rem;
+}
+.main-section{
+  padding-left:1rem;
+}
+#Introduction p{
+  padding-left:1rem;
+  padding-top:1rem;
+}
+#Introduction ul{
+  padding:1rem 5rem 1rem 5rem ;
+  display:block;
+  
+}
+#Introduction ul li{
+  padding:0.5rem;
+}
+#Pascal_Program_Structure p{
+  padding-left:1rem;
+  padding-top:1rem;
+}
+#Pascal_Program_Structure ul{
+  padding:1rem 5rem 1rem 5rem ;
+  display:block;
+}
+#Pascal_Program_Structure ul li{
+  padding:0.5rem;
+}
+#Pascal_Program_Structure pre code{
+  margin:-1rem 0 -2rem 2rem;
+  display:block;
+  background-color:#ddd;
+}
+#Hello_World p{
+  padding-left:1rem;
+  padding-top:1rem;
+}
+#Hello_World ul{
+  padding:1rem 5rem 1rem 5rem ;
+  display:block;
+}
+#Hello_World ul li{
+  padding:0.5rem;
+}
+#Hello_World pre code{
+  margin:-1rem 0 -2rem 2rem;
+  display:block;
+  background-color:#ddd;
+}
+#Variable p{
+  padding-left:1rem;
+  padding-top:1rem;
+}
+#Variable ul{
+  padding:1rem 5rem 1rem 5rem ;
+  display:block;
+}
+#Variable ul li{
+  padding:0.5rem;
+}
+#Variable pre code{
+  margin:-1rem 0 -2rem 2rem;
+  display:block;
+  background-color:#ddd;
+}
+#Subprograms p{
+  padding-left:1rem;
+  padding-top:1rem;
+}
+#Subprograms header{
+  padding-top:1rem;
+}
+#Subprograms ul{
+  padding:1rem 5rem 1rem 5rem ;
+  display:block;
+}
+#Subprograms ul li{
+  padding:0.5rem;
+}
+#Subprograms pre code{
+  margin:-1rem 0 -2rem 2rem;
+  display:block;
+  background-color:#ddd;
+}
+#Type_Declarations p{
+  padding-left:1rem;
+  padding-top:1rem;
+}
+#Type_Declarations ul{
+  padding:1rem 5rem 1rem 5rem ;
+  display:block;
+}
+#Type_Declarations ul li{
+  padding:0.5rem;
+}
+#Type_Declarations pre code{
+  margin:-1rem 0 -2rem 2rem;
+  display:block;
+  background-color:#ddd;
+}
+#Constants p{
+  padding-left:1rem;
+  padding-top:1rem;
+}
+#Constants ul{
+  padding:1rem 5rem 1rem 5rem ;
+  display:block;
+}
+#Constants ul li{
+  padding:0.5rem;
+}
+#Constants pre code{
+  margin:-1rem 0 -2rem 2rem;
+  display:block;
+  background-color:#ddd;
+}
+#Relational_Operators p{
+  padding-left:1rem;
+  padding-top:1rem;
+}
+#Relational_Operators img{
+  display:block;
+  margin:1rem 0 2rem 2rem;
+}
+#Relational_Operators ul{
+  padding:1rem 5rem 1rem 5rem ;
+  display:block;
+}
+#Relational_Operators ul li{
+  padding:0.5rem;
+}
+#Relational_Operators pre code{
+  margin:-1rem 0 -2rem 2rem;
+  display:block;
+  background-color:#ddd;
+}
+#Boolean_Operators p{
+  padding-left:1rem;
+  padding-top:1rem;
+}
+#Boolean_Operators img{
+  display:block;
+  margin:1rem 0 2rem 2rem;
+}
+#Boolean_Operators ul{
+  padding:1rem 5rem 1rem 5rem ;
+  display:block;
+}
+#Boolean_Operators ul li{
+  padding:0.5rem;
+}
+#Boolean_Operators pre code{
+  margin:-1rem 0 -2rem 2rem;
+  display:block;
+  background-color:#ddd;
+}
+#Function_Declarations p{
+  padding-left:1rem;
+  padding-top:1rem;
+}
+#Function_Declarations ul{
+  padding:1rem 5rem 1rem 5rem ;
+  display:block;
+}
+#Function_Declarations ul li{
+  padding:0.5rem;
+}
+#Function_Declarations pre code{
+  margin:-1rem 0 -2rem 2rem;
+  display:block;
+  background-color:#ddd;
+}
+#Procedure_Declarations p{
+  padding-left:1rem;
+  padding-top:1rem;
+}
+#Procedure_Declarations header{
+  padding-top:1rem;
+}
+#Procedure_Declarations ul{
+  padding:1rem 5rem 1rem 5rem ;
+  display:block;
+}
+#Procedure_Declarations ul li{
+  padding:0.5rem;
+}
+#Procedure_Declarations pre code{
+  margin:-1rem 0 -2rem 2rem;
+  display:block;
+  background-color:#ddd;
+}
+#Reference p{
+  padding-left:1rem;
+  padding-top:1rem;
+}
+#Reference ul{
+  padding:1rem 5rem 1rem 5rem ;
+  display:block;
+}
+#Reference ul li{
+  padding:0.5rem;
+}
+@media screen and (max-width:750px){
+  #navbar{
+    position:absolute;   
+  }
+  #main-doc{
+    position:relative;
+    padding:35rem 0 0 0;
+    margin:0;
+  }
+}
